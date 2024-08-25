@@ -23,3 +23,11 @@
 - Constants are set to only constant expression.
 - Shadowing is the concept of redeclaring a variable of the same name of mutable variable, such that the second or the most recent value will be stored in the given scope.
 - Define it with keyword `let` having same name as mutable one.
+
+## Guessing Game Takeaways
+
+- User inputs
+- Error handling while taking inputs. This is handled by `.expect(msg)`. Since, it checks with `Result` object. `Result` holds error and data when error did not occured.
+- Comparison result taken care with `Ordering` which helps to handle all the possible cases of comparison.
+- Threads for methods and functions to apply. Threads can be lazily initated which are seeded by the system.
+- Cargo.lock for versioning and dependency management by cargo.
