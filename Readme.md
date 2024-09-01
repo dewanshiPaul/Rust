@@ -31,3 +31,16 @@
 - Comparison result taken care with `Ordering` which helps to handle all the possible cases of comparison.
 - Threads for methods and functions to apply. Threads can be lazily initated which are seeded by the system.
 - Cargo.lock for versioning and dependency management by cargo.
+
+## Ownership
+
+- A very important aspect of Rust. This makes sure the **safety** of the programs.
+- Rust does not check at runtime whether a variable is defined before being used. Instead, Rust checks at compile-time.
+- The goal is to ensure that the program never have undefined behavior. This is because undefined behavior is dangerous to the low level programs with direct access to memory.
+- Making the check in compile time to achieve fewer checks in runtime, thus improving the performance.
+- Variables live in frames. Frames are organized into a stack of currently-called-functions.
+- To transfer access to data without copying it, Rust uses pointers.
+- The value that a pointer points-to is called its pointee.
+- Rust provides a construct called `Box` for putting data on the heap.
+- Rust do not allow to manually de-allocate the memory from heap.
+- if a variable x moves ownership of heap data to another variable y, then x cannot be used after the move.
