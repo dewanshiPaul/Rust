@@ -44,3 +44,13 @@
 - Rust provides a construct called `Box` for putting data on the heap.
 - Rust do not allow to manually de-allocate the memory from heap.
 - if a variable x moves ownership of heap data to another variable y, then x cannot be used after the move.
+
+## Referencing and Borrowing
+- It does not pass the ownership to some other variable or function. Hence, after some process, it is not required to return the variable since it does not have ownership on it.
+- The action of creating a reference is called `Borrowing`.
+- References are by default immutable.
+- Mutable references have one big restriction: if you have a mutable reference to a value, you can have no other references to that value.
+- A data race is similar to a race condition and happens when these three behaviors occur:
+    - Two or more pointers access the same data at the same time.
+    - At least one of the pointers is being used to write to the data.
+    - There’s no mechanism being used to synchronize access to the data.
