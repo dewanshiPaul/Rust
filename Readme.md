@@ -54,3 +54,11 @@
     - Two or more pointers access the same data at the same time.
     - At least one of the pointers is being used to write to the data.
     - There’s no mechanism being used to synchronize access to the data.
+
+## Minigrep Project
+Learnings:-
+- Lifetimes
+- Borrowing
+- Custom Error
+- Implementation 
+- mod and cargo for file modularization
