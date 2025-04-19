@@ -1,0 +1,1 @@
+C:\Users\thats\Desktop\Rust\minigrep\target\debug\minigrep.exe: C:\Users\thats\Desktop\Rust\minigrep\src\errors.rs C:\Users\thats\Desktop\Rust\minigrep\src\libs.rs C:\Users\thats\Desktop\Rust\minigrep\src\main.rs
